@@ -1,0 +1,17 @@
+header {
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        > li {
+            padding-left: 10px;
+        }
+    }
+}
