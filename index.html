@@ -14,30 +14,35 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <ul class="nav_menu">
-                    <li><a href="#home">Home</a></li>
+            <div class="entire-menu">
+                <input type="checkbox" id="change-hamburguer" />
+                <a class="hamburguer" href="#">
+                    <span></span>
+                    <label for="change-hamburguer"></label>
+                </a>
+                <ul class="menu">
+                    <li><a href="#home" class="first">Home</a></li>
                     <li><a href="#about_me">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="last">Contact</a></li>
                 </ul>
-
-            </nav>
-
+            </div>
         </div>
     </header>
+
+
 
     <!-- MAIN SECTION -->
 
     <section id="home" class="main">
         <div class="container">
             <div class="flex_main">
-              <div class="main_heading_part1">
-                <h1>Kristian Jagoda</h1>
-              </div>
-              <div class="main_heading_part2">
-                <h2>Junior Front End Web Developer</h2>
-              </div>
+                <div class="main_heading_part1">
+                    <h1>Kristian Jagoda</h1>
+                </div>
+                <div class="main_heading_part2">
+                    <h2>Junior Front End Web Developer</h2>
+                </div>
             </div>
         </div>
     </section>

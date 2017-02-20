@@ -1,6 +1,6 @@
 $(function() {
-
-    var menu = $('.nav_menu');
+    //Slide Menu
+    var menu = $('.menu');
     var links = menu.find('a');
 
 
