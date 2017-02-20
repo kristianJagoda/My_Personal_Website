@@ -46,12 +46,26 @@ body {
 	}
 }
 /*-----------ABOUT ME SECTION------------*/
+.about_me {
+	background-color: #fff;
+
+	h2 {
+		font-family: $font_old_standard;
+		font-size: 1.3rem;
+		text-align: center;
+		height: 10vh;
+		padding-top: 25px;
+		letter-spacing: 1.5px;
+	}
+}
+
 .about_me_flex {
 	display: flex;
 
-
 	.about_me_part1 {
 		flex-basis: 30%;
+		background-color: #000;
+		background-image: url("../images/images.jpg");
 	}
 
 	.about_me_part2 {
@@ -59,6 +73,20 @@ body {
 	}
 }
 /*-------PORTFOLIO SECTION------------*/
+.portfolio {
+	background-color: #fff;
+
+	h2 {
+		font-family: $font_old_standard;
+		font-size: 1.3rem;
+		text-align: center;
+		height: 10vh;
+		padding-top: 25px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+}
+
 .portfolio_flex {
 	display: flex;
 	flex-direction: column;
@@ -67,6 +95,20 @@ body {
 
 	.portfolio_elements {
 		flex-basis: 50%;
+	}
+}
+/*-------SKILLS SECTION------------*/
+.skills {
+	background-color: #fff;
+
+	h2 {
+		font-family: $font_old_standard;
+		font-size: 1.3rem;
+		text-align: center;
+		height: 10vh;
+		padding-top: 25px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
 	}
 }
 /*-------FORM SECTION------------*/
