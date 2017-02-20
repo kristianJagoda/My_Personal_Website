@@ -1,3 +1,27 @@
-/*--------FONTS----------*/
+/*--------GOOGLE FONTS----------*/
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+
+
+/* ------ FONT FACES -------- */
+@font-face {
+  font-family: "amble-regular";
+  src: url("../fonts/amble-regular.woff2") format("woff2"), url("../fonts/amble-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "amble-bold";
+  src: url("../fonts/amble-bold.woff2") format("woff2"), url("../fonts/ambley-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "amble-light";
+  src: url("../fonts/amble-thin.woff2") format("woff2"), url("../fonts/amble-thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
