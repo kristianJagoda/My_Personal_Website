@@ -100,24 +100,21 @@ header {
     flex-direction: column;
     justify-content: center;
     border-radius: 1rem;
-    border: 0.5 solid #000;
 
     > li {
         text-align: center;
-
     }
 
     a {
-
         text-decoration: none;
-        color: darken($main_color, 35%);
+        color: darken($main_color, 60%);
         padding: 5px 10px;
         display: block;
         text-transform: uppercase;
         transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 
         &:hover {
-            color: darken($main_color, 50%);
+            color: darken($main_color, 80%);
             background-color: #fff;
             border: 1px solid #000;
         }
