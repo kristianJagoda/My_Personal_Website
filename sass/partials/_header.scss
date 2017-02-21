@@ -135,9 +135,22 @@ header {
     }
 }
 /* Landscape */
-@media (max-width: 734px) and (orientation: landscape) {
+@media (max-width: 736px) and (orientation: landscape) {
     .menu {
         flex-direction: row;
+
+        .first {
+            &:hover {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+
+        .last {
+            &:hover {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
     }
-     
 }
