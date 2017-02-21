@@ -99,7 +99,7 @@ body {
 /*-------SKILLS SECTION------------*/
 .skills {
 	background-color: #fff;
-
+	//gradient
 	h2 {
 		font-family: $font_old_standard;
 		font-size: 1.3rem;
@@ -108,6 +108,24 @@ body {
 		padding-top: 25px;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
+	}
+}
+
+.skills {
+	.skill_flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+
+		img {
+			width: 120px;
+			height: 120px;
+			margin: 10px 0;
+		}
+		.jquery {
+			width: 230px;
+		}
 	}
 }
 /*-------FORM SECTION------------*/
