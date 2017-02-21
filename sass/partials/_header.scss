@@ -134,3 +134,9 @@ header {
         }
     }
 }
+/* Landscape */
+@media (max-width: 734px) and (orientation: landscape) {
+    .menu {
+        flex-direction: row;
+    }
+}
