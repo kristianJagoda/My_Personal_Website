@@ -15,38 +15,29 @@ body {
 }
 /*----------MAIN SECTION------------*/
 .main {
-	background: #fff;
-	background-image: url("../images/main.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
+	flex-basis: 70%;
 
-	.flex_main {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		height: 100vh;
+}
+.main_heading_part1 {
+	h1 {
+		font-family: $font_old_standard;
+		font-size: 4.5rem;
+		color: #000;
+		background-color: rgba(255, 255, 255, 0.6);
+		border-radius: 0.6rem;
+		text-align: center;
+	}
+}
 
-		h1 {
-			font-family: $font_old_standard;
-			font-size: 4.5rem;
-			color: darken($main_color, 50%);
-			background-color: rgba(255, 255, 255, 0.6);
-			border-radius: 0.6rem;
-			margin-top: 30px;
-			text-align: center;
-		}
-
-		h2 {
-			font-family: $font_old_standard;
-			font-size: 1.5rem;
-			margin-top: 30px;
-			background-color: rgba(255, 255, 255, 0.6);
-			border-radius: 0.6rem;
-			padding: 3px;
-			text-align: center;
-		}
+.main_heading_part2 {
+	h2 {
+		font-family: $font_old_standard;
+		font-size: 1.5rem;
+		margin-top: 30px;
+		background-color: rgba(255, 255, 255, 0.6);
+		border-radius: 0.6rem;
+		padding: 3px;
+		text-align: center;
 	}
 }
 /*-----------ABOUT ME SECTION------------*/
@@ -148,8 +139,8 @@ body {
 		opacity: 0;
 		background-color: rgba(255, 255, 255, 0.8);
 		-webkit-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
-		//border: 1px solid lightgrey;
+		transition: all 0.4s ease-in-out; //border: 1px solid lightgrey;
+
 		,
 		.a:visited,
 		a:link {
@@ -235,8 +226,8 @@ body {
 }
 /*-------SKILLS SECTION------------*/
 .skills {
-	background-color: #fff;
-	//gradient
+	background-color: #fff; //gradient
+
 	h2 {
 		font-family: $font_old_standard;
 		font-size: 1.3rem;
@@ -281,8 +272,8 @@ body {
 }
 /*-------FORM SECTION------------*/
 section.form {
-	background-color: #fff;
-	//gradient
+	background-color: #fff; //gradient
+
 	h2 {
 		font-family: $font_old_standard;
 		font-size: 1.3rem;

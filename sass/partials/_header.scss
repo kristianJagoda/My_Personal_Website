@@ -1,14 +1,19 @@
 header {
-    .container {
+    background: #fff;
+    background-image: url("../images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .header_flex {
         height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
-.entire-menu {
-    position: absolute;
-    padding: 20px;
-    width: 100%;
-    height: 3vh;
+.hamburger_menu {
+    flex-basis: 30%;
 }
 
 .hamburguer {
@@ -17,7 +22,7 @@ header {
     display: block;
     position: relative;
     background: none;
-    margin: 0 0 10px;
+    margin: 10px 0 5px 10px;
 
     &:after,
     &:before,
@@ -81,14 +86,16 @@ header {
     }
 
     &:checked ~ .menu {
-        max-height: 200px;
+        margin-top: 5px;
+        max-height: 300px;
+        width: 100%;
     }
 }
 
 .menu {
     max-height: 0;
     height: auto;
-    background-color: lighten($main_color, 10%);
+    background-color: $color-primary-0;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     overflow: hidden;
@@ -99,7 +106,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 1rem;
 
     > li {
         text-align: center;
@@ -107,8 +113,8 @@ header {
 
     a {
         text-decoration: none;
-        color: darken($main_color, 60%);
-        padding: 5px 10px;
+        color: #fff;
+        padding: 10px;
         display: block;
         text-transform: uppercase;
         transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
@@ -119,38 +125,10 @@ header {
             border: 1px solid #000;
         }
     }
-
-    .first {
-        &:hover {
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
-        }
-    }
-
-    .last {
-        &:hover {
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-        }
-    }
 }
 /* Landscape */
 @media (max-width: 736px) and (orientation: landscape) {
     .menu {
         flex-direction: row;
-
-        .first {
-            &:hover {
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-            }
-        }
-
-        .last {
-            &:hover {
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
-            }
-        }
     }
 }
