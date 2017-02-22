@@ -20,7 +20,17 @@ $(function() {
 
     })();
 
+    //Form validation
+    (function() {
+    var form = $('form.form');
+    var button = $('input[type="submit"]');
+    console.log(form, button);
+    form.on('submit', function(e){
+      e.preventDefault();
 
+
+    });
+    })();
 
 
 

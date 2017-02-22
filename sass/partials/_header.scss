@@ -12,8 +12,8 @@ header {
 }
 
 .hamburguer {
-    width: $button-size;
-    height: $button-size;
+    width: $button_size;
+    height: $button_size;
     display: block;
     position: relative;
     background: none;
@@ -26,8 +26,8 @@ header {
         content: ' ';
         display: block;
         width: 100%;
-        height: calc-line-height( $button-size );
-        background: $button-color;
+        height: calc-line-height( $button_size );
+        background: $button_color;
         left: 0;
         position: absolute;
         -webkit-transition: all 300ms ease-in-out;
@@ -55,7 +55,7 @@ header {
     }
 
     span {
-        top: calc-line-height( $button-size ) * 2;
+        top: calc-line-height( $button_size ) * 2;
     }
 }
 
@@ -64,7 +64,7 @@ header {
 
     &:checked ~ .hamburguer:after,
     &:checked ~ .hamburguer:before {
-        top: $button-size / 2;
+        top: $button_size / 2;
         margin-top: -10%;
     }
 
