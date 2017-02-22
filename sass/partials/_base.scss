@@ -280,7 +280,7 @@ body {
 	}
 }
 /*-------FORM SECTION------------*/
-.form {
+section.form {
 	background-color: #fff;
 	//gradient
 	h2 {
@@ -294,25 +294,27 @@ body {
 	}
 }
 
-.feedback-page {
-	text-align: center;
-}
-
 .form-main {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 0;
+	padding: 0;
+	margin: 20px 0;
 
 	.form-div {
 		background-color: rgba($main_color,0.4);
 		padding: 35px 35px 50px;
 		width: 450px;
+		height: 455px;
 		-moz-border-radius: 7px;
 		-webkit-border-radius: 7px;
 		border-radius: 7px;
 	}
+}
+
+.feedback-page {
+	text-align: center;
 }
 
 .feedback-input {
