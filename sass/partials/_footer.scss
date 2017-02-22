@@ -1,5 +1,24 @@
-.footer_flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer {
+    background: #000;
+    color: #fff;
+
+    .footer_flex {
+        width: 100%;
+        display: flex;
+    }
+
+    .footer_part1,
+    .footer_part2 {
+        width: 47.5%;
+    }
+
+    .footer_part2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
 }

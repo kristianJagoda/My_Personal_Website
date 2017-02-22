@@ -112,9 +112,16 @@ body {
 		background-size: contain;
 		background-repeat: no-repeat;
 
+		&:hover {
+			-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
+			-moz-box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
+			box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
+		}
+
 		&:first-of-type {
 			background-image: url("../images/oranges.jpg");
 		}
+
 		&:last-of-type {
 			background-image: url("../images/lemons.jpg");
 		}
