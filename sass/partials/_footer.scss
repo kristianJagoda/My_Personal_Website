@@ -12,13 +12,32 @@ footer {
         width: 47.5%;
     }
 
+    .footer_part1 {
+        p {
+          font-size: 0.8rem;
+        }
+        p:first-child {
+          padding: 10px 0 5px 10px;
+
+        }
+        p:last-child {
+          padding: 0 0 5px 10px;
+        }
+    }
+
     .footer_part2 {
         display: flex;
         justify-content: flex-end;
     }
+    a  {
+      padding: 10px 5px 5px 0;
+
+    }
 
     img {
-      width: 40px;
-      height: 40px;
+        width: 40px;
+        height: 40px;
+
+
     }
 }
