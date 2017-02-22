@@ -1,6 +1,7 @@
 footer {
-    background: #000;
-    color: #fff;
+    background: $main_color;
+    @include gradient(#fff, $main_color);
+    color: #000;
 
     .footer_flex {
         width: 100%;
@@ -14,14 +15,15 @@ footer {
 
     .footer_part1 {
         p {
-          font-size: 0.8rem;
+            font-size: 1rem;
         }
-        p:first-child {
-          padding: 10px 0 5px 10px;
 
+        p:first-child {
+            padding: 10px 0 5px 10px;
         }
+
         p:last-child {
-          padding: 0 0 5px 10px;
+            padding: 0 0 5px 10px;
         }
     }
 
@@ -29,15 +31,17 @@ footer {
         display: flex;
         justify-content: flex-end;
     }
-    a  {
-      padding: 10px 5px 5px 0;
 
+    a {
+        padding: 10px 5px 5px 0;
     }
 
     img {
-        width: 40px;
-        height: 40px;
-
-
+        width: 50px;
+        height: 50px;
+        transition: opacity 0.4s;
+      &:hover {
+        opacity: 0.6;
+      }
     }
 }

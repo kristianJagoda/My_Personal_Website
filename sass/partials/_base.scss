@@ -44,6 +44,7 @@ body {
 .about_me {
 	background-color: #fff;
 
+
 	h2 {
 		font-family: $font_old_standard;
 		font-size: 1.3rem;
@@ -60,8 +61,7 @@ body {
 
 	.about_me_part1 {
 		flex-basis: 30%;
-		background-color: #000;
-		background-image: url("../images/images.jpg");
+		@include gradient($color-primary-4, $color-primary-0);
 	}
 
 	.about_me_part2 {
