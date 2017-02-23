@@ -1,49 +1,42 @@
 /*--------GOOGLE FONTS----------*/
-
-@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
-
-
+@import url( 'http://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url( 'https://fonts.googleapis.com/css?family=Old+Standard+TT');
 /* ------ FONT FACES -------- */
 @font-face {
-  font-family: "amble-regular";
-  src: url("../fonts/amble-regular.woff2") format("woff2"), url("../fonts/amble-regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "amble-regular";
+    src: url("../fonts/amble-regular.woff2") format("woff2"), url("../fonts/amble-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: "amble-bold";
-  src: url("../fonts/amble-bold.woff2") format("woff2"), url("../fonts/ambley-bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "amble-bold";
+    src: url("../fonts/amble-bold.woff2") format("woff2"), url("../fonts/ambley-bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: "amble-light";
-  src: url("../fonts/amble-thin.woff2") format("woff2"), url("../fonts/amble-thin.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "amble-light";
+    src: url("../fonts/amble-thin.woff2") format("woff2"), url("../fonts/amble-thin.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
-
 /*-----HAMBURGER MENU-----*/
 @function calc-line-height($n) {
-  @return $n / 5;
+     @return $n / 5;
 }
-
-@mixin css3-rotation($n){
-  -ms-transform:rotate($n);
-  -webkit-transform:rotate($n);
-  transform: rotate($n);
+@mixin css3-rotation($n) {
+    -ms-transform: rotate($n);
+    -webkit-transform: rotate($n);
+    transform: rotate($n);
 }
-
 /*--- MIXIN FOR GRADIENTS ---*/
 @mixin gradient($from-color, $to-color) {
-    background-color: mix($from-color, $to-color); /* Fallback */
+    background-color: mix($from-color, $to-color);
+    /* Fallback */
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
     background-image: -webkit-linear-gradient(top, $from-color, $to-color);
-    background-image:    -moz-linear-gradient(top, $from-color, $to-color);
-    background-image:     -ms-linear-gradient(top, $from-color, $to-color);
-    background-image:      -o-linear-gradient(top, $from-color, $to-color);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$from-color', EndColorStr='$to-color')";
+    background-image: -moz-linear-gradient(top, $from-color, $to-color);
+    background-image: -ms-linear-gradient(top, $from-color, $to-color);
+    background-image: -o-linear-gradient(top, $from-color, $to-color);
+    -ms-filter:  "progid:DXImageTransform.Microsoft.gradient(startColorStr='$from-color', EndColorStr='$to-color')";
 }
