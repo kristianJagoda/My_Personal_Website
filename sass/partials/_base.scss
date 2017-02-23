@@ -23,8 +23,7 @@ body {
 		font-family: $font_old_standard;
 		font-size: 4.5rem;
 		color: #000;
-		background-color: rgba(255, 255, 255, 0.6);
-		border-radius: 0.6rem;
+		background-color: rgba(255, 255, 255, 0.2);
 		text-align: center;
 		text-shadow: 3px -1px 5px rgba(150, 150, 150, 0.77);
 	}
@@ -36,7 +35,6 @@ body {
 		font-size: 1.5rem;
 		margin-top: 30px;
 		background-color: rgba(255, 255, 255, 0.6);
-		border-radius: 0.6rem;
 		padding: 3px;
 		text-align: center;
 	}
