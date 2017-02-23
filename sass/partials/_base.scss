@@ -107,7 +107,7 @@ body {
 
 			a:active,
 			a:hover {
-				color: $color-primary-4;
+				color: lighten($color-primary-0, 70%);
 			}
 		}
 	}
