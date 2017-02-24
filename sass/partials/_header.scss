@@ -14,7 +14,6 @@ header {
 
 .hamburger_menu {
     flex-basis: 35%;
-
 }
 
 .hamburguer {
@@ -130,8 +129,13 @@ header {
         }
     }
 }
-/* Landscape */
-@media (max-width: 736px) and (orientation: landscape) {
+/* Mobile Landscape */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .menu {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1024px) {
     .menu {
         flex-direction: row;
     }
