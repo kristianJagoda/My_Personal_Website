@@ -88,7 +88,7 @@ header {
     &:checked ~ .menu {
         max-height: 300px;
         width: 100%;
-        z-index: 9005;
+        z-index: 8000;
     }
 }
 
@@ -106,12 +106,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 9005;
+
 
     > li {
         text-align: center;
         letter-spacing: 2px;
         word-spacing: 5px;
+        z-index: 9005;
     }
 
     a {
