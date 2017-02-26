@@ -8,11 +8,11 @@ $(function() {
 
 
         links.on("click", function(e) {
-            var target = $($(this).attr("href"));
+            var target = $($(this).attr('href'));
 
             if (target.length) {
                 event.preventDefault();
-                $("html, body").animate({
+                $('html, body').animate({
                     scrollTop: target.offset().top
                 }, 2000);
             }
@@ -62,8 +62,24 @@ $(function() {
 
     })();
 
+    //Scroll to Top
+    (function() {
+
+        var button = $('.button');
 
 
+        button.click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 2000);
+            return false;
+        });
+
+
+
+
+
+    })();
 
 
 
