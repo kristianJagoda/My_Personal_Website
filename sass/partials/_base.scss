@@ -479,3 +479,14 @@ textarea:hover {
 .submit:hover {
 	color: #3498db;
 }
+
+.form_tooltip {
+	font-family: $fonts_regular;
+	font-size: 0.7rem;
+	display: none;
+	position: absolute;
+	background-color: $color-primary-0;
+	border-radius: 5px;
+	padding: 10px;
+	color: #fff;
+}
