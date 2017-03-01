@@ -37,9 +37,9 @@ $(function() {
 
     //Tooltip
     (function() {
-        var toltip = $('.tooltip');
+        var tooltip = $('.tooltip');
 
-        toltip.hover(function() {
+        tooltip.hover(function() {
 
             var title = $(this).attr('title');
             $(this).data('tipText', title).removeAttr('title');
