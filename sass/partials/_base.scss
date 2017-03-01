@@ -130,12 +130,13 @@ article {
 			a:link,
 			a:visited {
 				text-decoration: none;
-				color: $color-primary-0;
+				color: #f00;
 			}
 
 			a:active,
 			a:hover {
-				color: lighten($color-primary-0, 70%);
+				border-bottom: 1px dashed #000;
+				color: #808080;
 			}
 		}
 	}
