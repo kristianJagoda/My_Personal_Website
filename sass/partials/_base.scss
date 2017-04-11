@@ -183,7 +183,9 @@ article {
 		}
 
 		&:last-of-type {
-			background-image: url("../images/lemons.jpg");
+			background-image: url("../images/first_page.png");
+			background-size: 150% 100%;
+			background-position: center;
 		}
 	}
 }
