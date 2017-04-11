@@ -176,7 +176,10 @@ article {
 		}
 
 		&:first-of-type {
-			background-image: url("../images/oranges.jpg");
+			background-image: url("../images/sit_on_chair.png");
+			background-size: 150% 100%;
+			background-position: center;
+
 		}
 
 		&:last-of-type {
