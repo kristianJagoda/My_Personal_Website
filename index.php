@@ -69,29 +69,20 @@
                         Hi! I am Kristian Jagoda and am a junior Front-End Web developer.
                     </p>
                     <p>
-                        I graduated in law from the University of Greenwich in 2011 and
-                        I practiced law for over 4 years but realised that it was not for me. I decided to try something different.
+                        I graduated in law from the University of Greenwich in 2011 and I practiced law for over 4 years but realised that it was not for me. I decided to try something different.
                     </p>
                     <p>
-                        I made the decision to quit my job and enrol on a full-time course.
-                        I completed a 7-week course in front-end web development
-                        with <strong><a href="http://coderslab.pl/en/">Coders' Lab</a></strong> in Wroclaw, Poland.
+                        I made the decision to quit my job and enrol on a full-time course. I completed a 7-week course in front-end web development with <strong><a href="http://coderslab.pl/en/">Coders' Lab</a></strong> in Wroclaw, Poland.
                     </p>
                     <p>
-                        I have learnt to build solid web foundation by using HTML5, styling it
-                        with CSS3 and adding behaviour with JavaScript (and its library – jQuery).
-                        I have learned technologies such as Sass and GULP which help to build websites
-                        faster and more efficiently.
+                        I have learnt to build solid web foundation by using HTML5, styling it with CSS3 and adding behaviour with JavaScript (and its library – jQuery). I have learned technologies such as Sass and GULP which help to build websites faster and more efficiently.
                         I have also learnt basics of PHP to create my first website in WordPress.
                     </p>
                     <p>
-                        Coding has become my passion. I understand that my skills might be limited
-                        but I am eager to learn and develop them further and my tutors have commended
-                        me on how quickly I have learnt the skills mentioned above and I code as often as I can.
+                        Coding has become my passion. I understand that my skills might be limited but I am eager to learn and develop them further and my tutors have commended me on how quickly I have learnt the skills mentioned above and I code as often as I can.
                     </p>
                     <p>
-                        You can download my <strong><a href="CV/KrystianJagodaCV.pdf">CV</a></strong> or visit my profiles at <strong><a href="https://www.linkedin.com/in/krystian-jagoda-97473895/">LinkedIn</a></strong>
-                        and <strong><a href="https://github.com/kristianJagoda">GitHub</a></strong>.
+                        You can download my <strong><a href="CV/KrystianJagodaCV.pdf">CV</a></strong> or visit my profiles at <strong><a href="https://www.linkedin.com/in/krystian-jagoda-97473895/">LinkedIn</a></strong> and <strong><a href="https://github.com/kristianJagoda">GitHub</a></strong>.
                     </p>
 
                 </div>
@@ -171,30 +162,29 @@
     <!-- CONTACT FORM -->
     <section id="contact" class="form">
         <div class="container">
-            <h2>Contact</h2>
-            <hr class="underline">
-            <div class="success"></div>
-            <div class="error"></div>
+
+            <div id="form-messages" class="error"></div>
 
             <div class="form-main">
                 <div class="form-div">
-                    <form class="form" class="form1">
+                    <form id="form" action="contact.php" method="POST">
 
                         <label class="name">
-                            <input name="name" type="text" class="name_input feedback-input tooltip" placeholder="Name" id="name" title="Your name cannot be shorter than 5 characters.">
+                            <input name="name" type="text" class="name_input feedback-input tooltip" placeholder="Enter your full name" id="name" title="Your name cannot be shorter than 5 characters." required />
+
                         </label>
 
                         <label class="email">
-                            <input name="email" type="text" class="email_input feedback-input tooltip" id="email" placeholder="Email" title="Your email address must include '@' and be at least 5 characters long.">
+                            <input name="email" type="text" class="email_input feedback-input tooltip" id="email" placeholder="Enter a valid email address" title="Your email address must include '@' and be at least 5 characters long." required>
                         </label>
 
                         <label class="text">
-                            <textarea name="text" class="text_textarea feedback-input tooltip" id="comment" placeholder="Message" title="Enter at least 5 characters."></textarea>
+                            <textarea name="message" class="text_textarea feedback-input tooltip" id="comment" placeholder="Write your message" title="Enter at least 5 characters." required></textarea>
                         </label>
 
 
                         <div class="submit">
-                            <input type="submit" value="SEND" class="button-blue" />
+                            <input type="submit" value="SEND" class="button-blue" form="form" />
 
                         </div>
                     </form>

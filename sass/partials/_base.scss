@@ -179,7 +179,6 @@ article {
 			background-image: url("../images/sit_on_chair.jpg");
 			background-size: 150% 100%;
 			background-position: center;
-
 		}
 
 		&:last-of-type {
@@ -495,4 +494,18 @@ textarea:hover {
 	border-radius: 5px;
 	padding: 10px;
 	color: #fff;
+}
+
+.success {
+	color: green;
+	font-size: 1.4rem;
+	display: block;
+	height: 455px;
+}
+
+.error {
+	color: red;
+	font-size: 1.4rem;
+	display: block;
+	height: 455px;
 }
