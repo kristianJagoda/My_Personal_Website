@@ -497,15 +497,18 @@ textarea:hover {
 }
 
 .success {
+	margin-top: 30px;
+	margin-bottom: 30px;
 	color: green;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	display: block;
-	height: 455px;
+	text-align: left;
 }
 
 .error {
+	margin-top: 30px;
+	margin-bottom: 30px;
 	color: red;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	display: block;
-	height: 455px;
 }

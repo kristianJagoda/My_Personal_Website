@@ -1,5 +1,13 @@
 <?php
 
+  //This function iterates througth all elements in an associative array(from the form) sent by the ajax request from index.php
+  function showFormData(){
+
+    foreach($_POST as $label => $value) {
+        echo $label . ': ' . $value . '<br>';
+      }
+  }
+
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
@@ -10,15 +18,15 @@
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
+
+
             echo "Sorry, there has been a problem with your submission. Please complete the form and try again.";
             exit;
         }
 
         // Set the recipient email address.
 
-        $recipient = "kristian2x@gmail.com";
+        $recipient = "###.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -33,18 +41,18 @@
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank you for submitting the form.";
+
+            echo 'Thank you for submitting the form.<br>';
+            echo '<br>';
+            echo 'You have submitted the following information:<br>';
+            echo '<br>';
+            showFormData();
         } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
+
             echo "Sorry, something has gone wrong and your message could not be sent.";
         }
 
     } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
         echo "There was a problem with your submission, please try again.";
     }
 
