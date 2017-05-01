@@ -63,34 +63,5 @@ $(function() {
     })();
 
 
-    //Form validation
-    (function() {
-
-        var form = $('form.form');
-
-        form.on('submit', function(e) {
-            e.preventDefault();
-
-            var nameVal = $('.name_input').val();
-            var emailVal = $('.email_input').val();
-            var messageVal = $('.text_textarea').val();
-            var divSuccess = $('.success');
-            var success = '';
-
-            //If form properly validated, show the message to user
-            if (nameVal.length > 5) {
-                if (emailVal.indexOf('@') > -1 && emailVal.length > 5) {
-                    if (messageVal.length > 5) {
-                        success = "Thank you for sending the form.";
-                        divSuccess.text(success).css('display', 'block');
-                    }
-                }
-            }
-
-
-
-
-
-        });
-    })();
+   
 });
