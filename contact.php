@@ -1,45 +1,51 @@
 <?php
 
-if ($_POST){
+    // Only process POST reqeusts.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the form fields and remove whitespace.
+        $name = strip_tags(trim($_POST["name"]));
+				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $message = trim($_POST["message"]);
 
-  $expected = array('name', 'email', 'message');
-  $validation = array(
-    'name'    => 'Please provide your full name',
-    'email'   => 'Please provide your valid email address',
-    'message' => 'Please write your message'
-  );
-  $errors = array();
-  $output = array();
+        // Check that data was sent to the mailer.
+        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            // Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Sorry, there has been a problem with your submission. Please complete the form and try again.";
+            exit;
+        }
 
-  foreach($expected as $key){
+        // Set the recipient email address.
 
-    if (array_key_exists($key, $_POST)) {
+        $recipient = "kristian2x@gmail.com";
 
-      if (empty($_POST[$key])) {
+        // Set the email subject.
+        $subject = "New contact from $name";
 
-        $errors[$key] = $validation[$key];
+        // Build the email content.
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n\n";
+        $email_content .= "Message:\n$message\n";
 
-      } else {
+        // Build the email headers.
+        $email_headers = "From: $name <$email>";
 
-        $output[$key] = $_POST[$key];
-      }
+        // Send the email.
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
+            // Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank you for submitting the form.";
+        } else {
+            // Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Sorry, something has gone wrong and your message could not be sent.";
+        }
 
     } else {
-      $errors[$key] = $validation[$key];
+        // Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
     }
 
-
-  }
-
-  if (!empty($errors)) {
-    $array = array('error' => true, 'fields' => $errors);
-
-  } else {
-    $message = '<h3>Thank you for submitting the form.</h3>';
-    $array = array('error' => false, 'message' => $message);
-  }
-
-  echo json_encode($array);
-
-
-}
+?>

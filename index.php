@@ -163,7 +163,7 @@
     <section id="contact" class="form">
         <div class="container">
 
-            <div id="form-messages" class="error"></div>
+            <div id="form-messages"></div>
 
             <div class="form-main">
                 <div class="form-div">
