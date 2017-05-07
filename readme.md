@@ -3,4 +3,4 @@
 ## This website contains information about me, my portfolio and CV. ##
 
 
-Preview -> [My Personal Website](https://kristianjagoda.github.io/My_Personal_Website/)
+Preview -> [My Personal Website](http:\\krystianjagoda.co.uk)
