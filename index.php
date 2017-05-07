@@ -66,7 +66,7 @@
                 </div>
                 <div class="about_me_part2">
                     <p>
-                        Hi! I am Kristian Jagoda and am a junior Front-End Web developer.
+                        Hi! I am Krystian Jagoda and am a junior Front-End Web developer.
                     </p>
                     <p>
                         I graduated in law from the University of Greenwich in 2011 and I practiced law for over 4 years but realised that it was not for me. I decided to try something different.
